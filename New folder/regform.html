@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="regstylesheet.css">
+  </head>
+  <body>
+
+<div class="user">
+    <header class="user__header">
+        <img src="logo.JPG" alt="" />
+        <h1 class="user__title">Login</h1>
+    </header>
+    
+    <form class="form">
+        <div class="form__group">
+            <input type="text" placeholder="Username/ e-mail" class="form__input" />
+        </div>
+        
+        
+        <div class="form__group">
+            <input type="password" placeholder="Password" class="form__input" />
+        </div>
+        
+        <button class="btn" type="button">Login</button>
+    </form>
+</div>
+      <script>
+          const button = document.querySelector('.btn')
+const form   = document.querySelector('.form')
+
+button.addEventListener('click', function() {
+   form.classList.add('form--no') 
+});
+      </script>
+    </body>
+</html>
